@@ -1,0 +1,21 @@
+﻿@using InterviewTask.Models
+@model IEnumerable<HelperServiceModel>
+
+@if (!Model.Any())
+{
+    return;
+}
+@{ var counter = 0;}
+@foreach (var helperService in Model)
+{
+    <div class="block promomanualblock col-md-4 col-sm-12">
+        @Html.Partial("/Views/Partials/HelperServiceInfo/_helperServiceInfoCard.cshtml", helperService)
+
+        <form class="mb-2" action="@Url.Action("Index","OpenWeatherApi")" method="get" id="weatherInfo-@counter">
+            @Html.Hidden("serviceId", helperService.Id)
+            <button type="submit" form="weatherInfo-@counter" value="Submit">Check Weather</button>
+        </form>
+        @{counter++;}
+    </div>
+}
+

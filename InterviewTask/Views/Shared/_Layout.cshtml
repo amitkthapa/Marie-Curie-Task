@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Care and support through terminal illness | Marie Curie</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="description" content="We provide care and support for people living with any terminal illness, and their families. Last year we cared for over 40,000 people across the UK." />
+    <meta name="keywords" content="Marie Curie" />
+
+    <link href="~/Content/settings.css" rel="stylesheet" />
+    <link href="~/Content/patterns.css" rel="stylesheet" />
+    <link href="~/Content/screen.css" rel="stylesheet" />
+    <style>
+        .mb-2 {
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="off-canvas">
+        @Html.Partial("~/Views/Partials/Layout/_header.cshtml")
+
+        @RenderBody()
+
+        @Html.Partial("~/Views/Partials/Layout/_footer.cshtml")
+    </div>
+</body>
+</html>

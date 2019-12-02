@@ -1,0 +1,21 @@
+﻿<!-- Main -->
+<main class="main">
+    <section>
+        <div class="container">
+            <div class="row">
+                @Html.Partial("_pageHeading")
+            </div>
+        </div>
+    </section>
+
+    <!-- Create your cards here.  One has been provided as a template for use in your loop based on the results contained within your model -->
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <!-- Weather Information -->
+                @{Html.RenderAction("RenderWeatherInfo", "OpenWeatherApi");}
+            </div>
+        </div>
+    </section>
+</main>

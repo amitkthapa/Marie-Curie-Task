@@ -1,0 +1,142 @@
+﻿<!-- Header -->
+<header class="header header-border mb-4">
+    <div class="header-secondary">
+        <div class="container">
+            <div class="skip-link-container">
+                <a href="#main-content" class="sr-only sr-only-focusable skip-link" style="position:absolute">Skip to main content</a>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="header-brand tracking-primary-navigation" itemscope="" itemtype="http://schema.org/Organization">
+                        <a class="logo" id="tracking-primary-navigation-logo" href="https://www.mariecurie.org.uk" rel="home" title="Marie Curie" itemprop="url">
+                            <span class="sr-only">Marie Curie</span>
+                            <span class="hidden-sm hidden-xs"></span>
+                            <span class="logo logo-no-strap hidden-md hidden-lg"></span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-9">
+                    <div class="navbar-nav hidden-md hidden-lg navbar-sm pull-right">
+                        <a href="//www.mariecurie.org.uk/donate" class="btn btn-donation-orange navbar-btn">Donate</a>
+                        <button type="button" class="form-search-toggle btn btn-default navbar-btn" id="form-search-toggle" style="display: inline-flex; height: 2.4rem;">
+                            <span class="sr-only">Search </span>
+                            <svg aria-hidden="true" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width: 1.3rem; height: 1.3rem;">
+                                <path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="navbar-right navbar-secondary">
+                        <div class="search-opened-nav">
+                            <form class="navbar-form form-search" role="search" action="/search" method="GET">
+                                <label class="control-label sr-only" for="search">Search</label>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <input id="miniSearchTextBox" type="search" class="form-control mini-search" name="q" placeholder="Search..." />
+                                        <span class="input-group-btn">
+                                            <button type="submit"
+                                                    class="btn btn-default mini-search"
+                                                    title="">
+                                                <svg aria-hidden="true" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width: 1.3rem; height: 1.3rem;">
+                                                    <path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path>
+                                                </svg>
+
+                                                <span class="sr-only">Search</span>
+                                            </button>
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <button class="close form-search-toggle hidden-md hidden-lg">
+                                    <svg aria-hidden="true" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512" style="width: 1.3rem; height: 1.3rem;">
+                                        <path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path>
+                                    </svg>
+                                    <span class="sr-only">Close search</span>
+                                </button>
+                            </form>
+
+                            <button type="button" class="off-canvas-toggle btn btn-default btn-toggle navbar-btn hidden-md hidden-lg" id="off-canvas-open">
+                                Menu
+                                <span class="fa fa-bars"></span>
+                            </button>
+
+                            <button type="button" class="off-canvas-toggle btn btn-default btn-toggle navbar-btn hidden-md hidden-lg" id="off-canvas-close">
+                                <span class="sr-only">Close menu</span>
+                                <span class="fa fa-arrow-right"></span>
+                            </button>
+                        </div>
+                        <ul class="nav navbar-nav navbar-secondary pull-right hidden-sm hidden-xs tracking-secondary-navigation tertiary-nav">
+                            <li>
+                                <a href="//www.mariecurie.org.uk/jobs" aria-haspopup="false" aria-expanded="false" class="grey">Jobs</a>
+                            </li>
+                            <li>
+                                <a href="https://shop.mariecurie.org.uk/" aria-haspopup="false" aria-expanded="false" class="grey">Shop online</a>
+                            </li>
+                            <li>
+                                <a href="//www.mariecurie.org.uk/local" aria-haspopup="false" aria-expanded="false" class="grey">In your area</a>
+                            </li>
+                            <li>
+                                <a href="//www.mariecurie.org.uk/contact-us" aria-haspopup="false" aria-expanded="false" class="grey">Contact us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="off-canvas-nav">
+        <div class="off-canvas-brand">
+            <a class="logo" href="//www.mariecurie.org.uk/" rel="home" title="Marie Curie">
+                <span class="sr-only">Marie Curie</span>
+            </a>
+        </div>
+
+        <button type="button" id="off-canvas-close-after" class="close">
+            <i class="fa fa-times fa-lg"></i>
+            <span class="sr-only">Close menu</span>
+        </button>
+
+        <div class="container meganav-container">
+            <div class="meganav">
+                <nav class="megamenu shared" role="navigation">
+                    <ol class="accessible-megamenu" style="display: block;">
+                        <li class="acc-top-1 accessible-megamenu-top-nav-item">
+                            <h2>
+                                <a href="//www.mariecurie.org.uk/help" aria-haspopup="true" aria-expanded="false">
+                                    How we can help
+                                    <span></span>
+                                </a>
+                            </h2>
+                        </li>
+                        <li class="acc-top-1 accessible-megamenu-top-nav-item">
+                            <h2>
+                                <a href="//www.mariecurie.org.uk/who" aria-haspopup="true" aria-expanded="false">
+                                    Who we are
+                                    <span></span>
+                                </a>
+                            </h2>
+                        </li>
+                        <li class="acc-top-1 accessible-megamenu-top-nav-item">
+                            <h2>
+                                <a href="//www.mariecurie.org.uk/professionals" aria-haspopup="true" aria-expanded="false">
+                                    Professionals
+                                    <span></span>
+                                </a>
+                            </h2>
+                        </li>
+                        <li class="acc-top-1 accessible-megamenu-top-nav-item">
+                            <h2>
+                                <a href="//www.mariecurie.org.uk/get-involved" aria-haspopup="true" aria-expanded="false">
+                                    Get involved
+                                    <span></span>
+                                </a>
+                            </h2>
+                        </li>
+                    </ol>
+                    <a href="//www.mariecurie.org.uk/donate" class="btn btn__donate hidden-xs hidden-sm">Donate</a>
+                </nav>
+            </div>
+        </div>
+    </nav>
+</header>
+

@@ -1,0 +1,21 @@
+﻿<!-- Main -->
+<main class="main">
+    <section>
+        <div class="container">
+            <div class="row">
+                @Html.Partial("_pageHeading")
+            </div>
+        </div>
+    </section>
+
+    <!-- Create your cards here.  One has been provided as a template for use in your loop based on the results contained within your model -->
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <!-- Marie Curie Helper Service card -->
+                @{Html.RenderAction("RenderHelperServiceInformation", "Home");}                     
+            </div>
+        </div>
+    </section>
+</main>
